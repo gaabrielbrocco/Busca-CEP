@@ -2,6 +2,9 @@
 
 Buscador de CEP. Desenvolvido com Vue e Vuetify, para praticar integração com APIs.
 
+## ❗️ Link Executável:
+[Busca CEP](https://busca-cep-theta.vercel.app/)
+
 ## ❗️ Link Documentação
 
 - 📄 [Docs](https://vuetifyjs.com/)
