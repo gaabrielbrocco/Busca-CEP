@@ -1,10 +1,10 @@
 <template>
-  <dialog :controller="controller" />
+  <dialog-form :controller="controller" />
 </template>
 
 <script setup>
 import { cepControllerImpl } from "../di/di";
-import Dialog from "../components/dialog.vue";
+import DialogForm from "../components/dialog-form.vue";
 
 const controller = cepControllerImpl();
 console.log(controller);

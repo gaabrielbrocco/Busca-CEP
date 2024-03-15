@@ -1,7 +1,11 @@
 const buscaCepRepository = (axios) => async (cep) => {
-  const response = await axios.get(`/cep/v1/${cep}`, {});
+  try {
+    const response = await axios.get(`/ws/${cep}/json`, {});
 
-  return response?.data ?? [];
+    return response?.data ?? {};
+  } catch (error) {
+    throw error;
+  }
 };
 
 export default buscaCepRepository;

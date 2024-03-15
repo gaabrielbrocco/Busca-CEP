@@ -1,31 +1,33 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col cols="12" md="4">
-        <v-text-field
-          v-model="controller.modelCep.value.city"
-          label="Cidade"
-          hide-details
-          required
-        ></v-text-field>
-      </v-col>
+    <v-row class="d-flex justify-center mt-10" cols="6" sm="7" md="6" lg="3">
+      <v-col>
+        <v-col >
+          <v-title class="d-flex justify-center mb-3 text-h5">Cidade</v-title>
+          <v-text-field
+            v-model="controller.modelCep.value.localidade"
+            hide-details
+            disabled
+          ></v-text-field>
+        </v-col>
 
-      <v-col cols="12" md="4">
-        <v-text-field
-          v-model="controller.modelCep.value.state"
-          label="Estado"
-          hide-details
-          required
-        ></v-text-field>
-      </v-col>
+        <v-col>
+          <v-title class="d-flex justify-center mb-3 text-h5">Estado</v-title>
+          <v-text-field
+            v-model="controller.modelCep.value.uf"
+            hide-details
+            disabled
+          ></v-text-field>
+        </v-col>
 
-      <v-col cols="12" md="4">
-        <v-text-field
-          v-model="controller.modelCep.value.cep"
-          label="CEP"
-          hide-details
-          required
-        ></v-text-field>
+        <v-col>
+          <v-title class="d-flex justify-center mb-3 text-h5">CEP</v-title>
+          <v-text-field
+            v-model="controller.modelCep.value.cep"
+            hide-details
+            disabled
+          ></v-text-field>
+        </v-col>
       </v-col>
     </v-row>
   </v-container>
