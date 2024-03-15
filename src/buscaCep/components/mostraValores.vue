@@ -21,6 +21,15 @@
         </v-col>
 
         <v-col>
+          <v-title class="d-flex justify-center mb-3 text-h5">Bairro</v-title>
+          <v-text-field
+            v-model="controller.modelCep.value.neighborhood"
+            hide-details
+            disabled
+          ></v-text-field>
+        </v-col>
+
+        <v-col>
           <v-title class="d-flex justify-center mb-3 text-h5">CEP</v-title>
           <v-text-field
             v-model="controller.modelCep.value.cep"

@@ -8,10 +8,17 @@ const cepController = (buscaCepUseCase) => () => {
 
   const mostraCep = async () => {
     try {
+      const validaCep = /^[0-9]{5}-?[0-9]{3}$/;
+
       if (!textoCep.value) {
         alert("Por favor, digite um cep");
+      } 
+
+      if (!validaCep.test(textoCep.value)) {
+        alert("Por favor, digite um CEP válido");
         return;
       }
+
       loading.value = true;
       modelCep.value = await buscaCepUseCase(textoCep.value);
       textoCep.value = null
