@@ -5,7 +5,7 @@
         <v-col >
           <v-title class="d-flex justify-center mb-3 text-h5">Cidade</v-title>
           <v-text-field
-            v-model="controller.modelCep.value.localidade"
+            v-model="controller.modelCep.value.city"
             hide-details
             disabled
           ></v-text-field>
@@ -14,7 +14,7 @@
         <v-col>
           <v-title class="d-flex justify-center mb-3 text-h5">Estado</v-title>
           <v-text-field
-            v-model="controller.modelCep.value.uf"
+            v-model="controller.modelCep.value.state"
             hide-details
             disabled
           ></v-text-field>

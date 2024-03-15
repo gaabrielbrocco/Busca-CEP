@@ -1,26 +1,18 @@
 class Cep {
   constructor({
     cep = "",
-    logradouro = "",
-    complemento = "",
-    bairro = "",
-    localidade = "",
-    uf = "",
-    ibge = "",
-    gia = "",
-    ddd = "",
-    siafi = "",
+    state = "",
+    city = "",
+    neighborhood = "",
+    street = "",
+    service = "",
   }) {
     this.cep = cep;
-    this.logradouro = logradouro;
-    this.complemento = complemento;
-    this.bairro = bairro;
-    this.localidade = localidade;
-    this.uf = uf;
-    this.ibge = ibge;
-    this.gia = gia;
-    this.ddd = ddd;
-    this.siafi = siafi;
+    this.state = state;
+    this.city = city;
+    this.neighborhood = neighborhood;
+    this.street = street;
+    this.service = service;
   }
 }
 export default Cep;

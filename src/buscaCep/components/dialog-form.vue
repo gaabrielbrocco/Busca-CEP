@@ -2,21 +2,21 @@
   <v-container>
     <v-row justify="center" class="fill-height my-15" align="center">
       <v-col cols="12" sm="7" md="6" lg="3">
-        <div justify="center" align="center" class="mb-10" id="custom-title">
+        <div justify="center" align="center" class="mb-10 text-h3" >
           Busca CEP
         </div>
         <v-form @submit.prevent="controller.mostraCep()">
           <v-text-field
             v-model="controller.textoCep.value"
             label="Digite o CEP"
-
+            clearable
           ></v-text-field>
           
           <div class="d-flex justify-center">
             <v-btn
               @click="controller.mostraCep()"
               size="large"
-              :loading="controller.loading.value"
+              :loading="controller.loading.value" 
               class=""
               text="Buscar"
               color="primary"
@@ -43,9 +43,4 @@ const { controller } = defineProps({
 
 
 
-<style scoped>
-#custom-title {
-  font-size: 40px;
-  color: white;
-}
-</style>
+<style scoped></style>

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://viacep.com.br",
+  baseURL: "https://brasilapi.com.br",
 });
 
 export default axiosInstance

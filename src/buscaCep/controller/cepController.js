@@ -14,6 +14,7 @@ const cepController = (buscaCepUseCase) => () => {
       }
       loading.value = true;
       modelCep.value = await buscaCepUseCase(textoCep.value);
+      textoCep.value = null
     } catch (error) {
       console.log(error);
     } finally {
