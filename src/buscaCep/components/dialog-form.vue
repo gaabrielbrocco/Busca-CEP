@@ -8,7 +8,6 @@
         <v-form @submit.prevent="controller.mostraCep()">
           <v-text-field
             v-model="controller.textoCep.value"
-            v-maska:[cep]
             label="Digite o CEP"
             clearable
           ></v-text-field>
@@ -32,9 +31,6 @@
 
 
 <script setup>
-const cep = {
-  mask: "#####-###"
-}
 import MostraValores from "./mostraValores.vue";
 
 const { controller } = defineProps({
