@@ -9,6 +9,7 @@
           <v-text-field
             v-model="controller.textoCep.value"
             label="Digite o CEP"
+            v-maska:[cep]
             clearable
           ></v-text-field>
           
@@ -31,6 +32,10 @@
 
 
 <script setup>
+const cep = {
+  mask: "#####-###"
+}
+
 import MostraValores from "./mostraValores.vue";
 
 const { controller } = defineProps({
